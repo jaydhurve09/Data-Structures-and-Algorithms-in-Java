@@ -1,4 +1,4 @@
-*.class
-*.iml
+**/*.class
+**/*.iml
 .idea
 .vscode
