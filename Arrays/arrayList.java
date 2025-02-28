@@ -20,7 +20,7 @@ public class arrayList {
             list.add(sc.nextInt());
         }
         //get first element
-        System.out.println(list.get(0));;
+        System.out.println(list.get(0));
 
         //printing the list
         System.out.println(list);
