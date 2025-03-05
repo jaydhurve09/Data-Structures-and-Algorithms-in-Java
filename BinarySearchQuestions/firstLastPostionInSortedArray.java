@@ -31,7 +31,9 @@ public class firstLastPostionInSortedArray {
         int start = search(nums, target, true);
         int end = search(nums, target, false);
         res[0] = start;         //set first index to start
-        res[1] = end;           //set last index as end
+        if (res[0]!=-1) {   //if first occurrence not found means target is not present, so not point in finding end occurrence
+            res[1] = end;   //set last index as end
+        }
         return res;
     }
 
