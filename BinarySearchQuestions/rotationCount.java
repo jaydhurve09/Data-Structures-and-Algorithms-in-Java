@@ -12,14 +12,17 @@ public class rotationCount {
         if(pivot==-1){
             return 0;
         }
-        int start = 0;
-        int end = pivot;
-        while(start<end){
-            if(nums[start]<nums[start+1]){
-                start++;
-            }
-        }
-        return start+1;
+//        int start = 0;
+//        int end = pivot;
+//        while(start<end){
+//            if(nums[start]<nums[start+1]){
+//                start++;
+//            }
+//        }
+//        return start+1;
+
+//        Or Array is rotated pivot times
+        return pivot + 1;
     }
 
     static int findPivot(int[] arr){
