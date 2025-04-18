@@ -14,6 +14,7 @@ public class arrayList {
 //        list.add(74265);
 //        list.add(98);
 
+
         //taking input
         System.out.print("Enter elements of Array: ");
         for (int i = 0; i < 5; i++) {
