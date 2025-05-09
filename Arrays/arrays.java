@@ -6,7 +6,7 @@ public class arrays {
 public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int[] arr = new int[5];
-    //normally assining array
+    //normally assigning array
 //    arr[0] = 15;
 //    arr[1] = 7;
 //    arr[2] = 32;

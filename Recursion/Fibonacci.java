@@ -4,7 +4,8 @@ package Recursion;
 
 public class Fibonacci {
     public static void main(String[] args) {
-        System.out.println(fibo(4));
+        int ans = fibo(4);
+        System.out.println(ans);        //ans will be three recursion tree for 4
     }
 
     static int fibo(int n) {
