@@ -22,7 +22,7 @@ public class example1 {
 
     static void print4(int n){
         System.out.println(n);
-        print5(5);
+        print5(5);  //tail condition
     }
 
     static void print5(int n){
