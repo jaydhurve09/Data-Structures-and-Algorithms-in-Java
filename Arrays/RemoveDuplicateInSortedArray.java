@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class RemoveDuplicateInSortedArray {
     public static void main(String[] args) {
         int[] arr = {0,0,1,1,1,2,2,3,3,4};
-        System.out.println(removeDuplicates(arr));
+        System.out.println(Arrays.toString(printUnique(removeDuplicates(arr), arr)));
     }
 
     static int removeDuplicates(int[] nums){
@@ -28,5 +28,20 @@ public class RemoveDuplicateInSortedArray {
         }
 
         return count;
+    }
+
+    static int[] printUnique(int n, int[] nums){
+        int[] arr = new int[n];
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if(i<n-1 &&nums[i]==nums[i+1]){
+                continue;
+            } else {
+                arr[count] = nums[i];
+                count++;
+            }
+        }
+
+        return arr;
     }
 }
