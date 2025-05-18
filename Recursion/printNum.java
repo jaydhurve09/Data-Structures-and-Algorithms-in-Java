@@ -5,7 +5,7 @@ public class printNum {
         int num = 5;
         printN(num);
     }
-
+    //n-1
     static void printN(int n) {
         if (n==0) {
             return;
