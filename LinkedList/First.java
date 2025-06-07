@@ -8,6 +8,7 @@ public class First {
         list.insertAtFirst(9);
         list.insertAtLast(30);
         list.insertAtLast(7);
+        list.insertAt(100, 2);
         list.display();
     }
 }
