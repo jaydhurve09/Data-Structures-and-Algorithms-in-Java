@@ -20,5 +20,6 @@ public class First {
         System.out.println("Delete At: index 2");
         list.deleteAt(2);
         list.display();
+        System.out.println("Find value "+list.find(30));
     }
 }
