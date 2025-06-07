@@ -9,6 +9,16 @@ public class First {
         list.insertAtLast(30);
         list.insertAtLast(7);
         list.insertAt(100, 2);
+        System.out.println("Original:");
+        list.display();
+        System.out.println("Delete First:");
+        list.deleteFirst();
+        list.display();
+        System.out.println("Delete Last:");
+        list.deleteLast();
+        list.display();
+        System.out.println("Delete At: index 2");
+        list.deleteAt(2);
         list.display();
     }
 }
