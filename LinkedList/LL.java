@@ -10,7 +10,6 @@ public class LL {
         this.size = 0;
     }
 
-
     private class Node {
         private int value;
         private Node next;
@@ -23,5 +22,34 @@ public class LL {
             this.value = value;
             this.next = next;
         }
+    }
+
+    public void insertAtFirst(int value) {
+        Node node = new Node(value);
+        node.next = head;
+        head = node;
+        if(tail == null) {
+            tail = head;
+        }
+        size += 1;
+    }
+
+    public void insertAtLast(int value) {
+        if(tail == null) {
+            insertAtFirst(value);
+            return;
+        }
+        Node node = new Node(value);
+        tail.next = node;
+        tail = node;
+    }
+
+    public void display() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.value+" -> ");
+            temp = temp.next;
+        }
+        System.out.print("END");
     }
 }
