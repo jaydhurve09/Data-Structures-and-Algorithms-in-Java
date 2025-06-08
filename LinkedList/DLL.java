@@ -51,6 +51,26 @@ public class DLL {
         last = node;
     }
 
+    public  void insertAtIdx (int value, int index) {
+        Node P = findAtIdx(index);
+        Node node = new Node(value);
+        if (P.prev != null) {
+            P.prev.next = node;
+            node.prev = P.prev;
+        }
+        node.next = P;
+        P.prev = node;
+    }
+
+    public Node findAtIdx (int index) {
+        Node node = head;
+        int idx = 0;
+        for (int i = 0; i < index; i++) {
+            node = node.next;
+        }
+        return node;
+    }
+
     public void display() {
         Node node = head;
         Node last = null;

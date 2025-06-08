@@ -28,6 +28,8 @@ public class Main {
         dll.insertFirst(15);
         dll.insertFirst(10);
         dll.insertLast(44);
+        dll.insertAtIdx(11, 1);
         dll.display();
+
     }
 }
