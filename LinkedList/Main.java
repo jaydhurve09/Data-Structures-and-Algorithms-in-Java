@@ -22,14 +22,20 @@ public class Main {
 //        list.display();
 //        System.out.println("Find value "+list.find(30));
 
-        DLL dll = new DLL();
-        dll.insertFirst(37);
-        dll.insertFirst(22);
-        dll.insertFirst(15);
-        dll.insertFirst(10);
-        dll.insertLast(44);
-        dll.insertAtIdx(11, 1);
-        dll.display();
+//        DLL dll = new DLL();
+//        dll.insertFirst(37);
+//        dll.insertFirst(22);
+//        dll.insertFirst(15);
+//        dll.insertFirst(10);
+//        dll.insertLast(44);
+//        dll.insertAtIdx(11, 1);
+//        dll.display();
 
+        CLL list = new CLL();
+        list.insert(2);
+        list.insert(3);
+        list.insert(5);
+        list.insert(7);
+        list.display();
     }
 }
