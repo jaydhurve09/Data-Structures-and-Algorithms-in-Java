@@ -36,6 +36,7 @@ public class Main {
         list.insert(3);
         list.insert(5);
         list.insert(7);
+        list.deleteValue(5);
         list.display();
     }
 }
