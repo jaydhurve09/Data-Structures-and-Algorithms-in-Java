@@ -1,6 +1,6 @@
 .idea
 .vscode
-DSA in JAVA.iml
+./DSA in JAVA.iml
 **/*.class
 **/*.iml
 *.iml
