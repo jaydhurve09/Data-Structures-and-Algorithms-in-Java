@@ -15,7 +15,12 @@ class HashMaps {
         map.put("T-shirt", 1299.99);
         map.put("Travel Bag", 5999.0);
         map.put("Toy for Kids", 649.0);
-        System.out.println(map);
+        System.out.println(map.get("T-shirt"));
+        System.out.println(map.containsKey("Iphone"));
+        System.out.println(map.containsValue(1299.99));
+        for (String key : map.keySet()) {
+            System.out.println(key + " : Rs " + map.get(key));
+        }
     }
 
 }
